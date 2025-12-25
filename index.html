@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robin Kafe | QR Menü</title>
+  <meta name="description" content="Robin Kafe QR Menü" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body id="top">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo">RK</div>
+        <div>
+          <h1 id="placeName">Robin Kafe</h1>
+          <p id="placeInfo"></p>
+        </div>
+      </div>
+
+      <div class="pill" title="Masa bilgisi">
+        <span>🪑</span>
+        <div><strong id="tableNo">Masa</strong> <span id="tableVal">—</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="search" role="search">
+      <span aria-hidden="true">🔎</span>
+      <input id="q" type="search" placeholder="Ürün ara (ör. burger, çay, su)..." autocomplete="off" />
+    </div>
+
+    <div class="cats" id="cats"></div>
+
+    <div id="content"></div>
+
+    <div id="empty" class="empty" style="display:none;">
+      Aradığın kriterlere uygun ürün bulunamadı.
+    </div>
+
+    <div class="hr"></div>
+    <div class="hint" id="legalNote"></div>
+  </main>
+
+  <footer class="footerbar">
+    <div class="footer-inner">
+      <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">⬆️ Başa dön</a>
+      <a id="waBtn" class="btn success" href="#" target="_blank" rel="noopener">💬 WhatsApp Sipariş</a>
+      <button class="btn primary" id="callBtn">📞 Ara</button>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

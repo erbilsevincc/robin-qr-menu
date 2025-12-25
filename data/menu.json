@@ -1,0 +1,489 @@
+{
+  "settings": {
+    "placeName": "Robin Kafe",
+    "placeInfo": "Premium Lounge • Doğal & Sade",
+    "phone": "+905321234567",
+    "whatsappPhone": "905321234567",
+    "currency": "₺",
+    "defaultTableLabel": "Masa",
+    "legalNote": "Fiyatlar bilgilendirme amaçlıdır. Ürün içerikleri ve alerjen bilgisi için personelimize danışabilirsiniz."
+  },
+  "menu": [
+    {
+      "cat": "Nargile",
+      "name": "Robin Özel",
+      "desc": "Özel harman, yumuşak içim.",
+      "price": 450,
+      "tags": ["pop"],
+      "image": "assets/images/nargile.jpg"
+    },
+    {
+      "cat": "Nargile",
+      "name": "Adalya",
+      "desc": "Elma, karpuz, üzüm, nane seçenekleri.",
+      "price": 400,
+      "tags": []
+    },
+    {
+      "cat": "Nargile",
+      "name": "Al Fakher",
+      "desc": "Klasik aromalar.",
+      "price": 420,
+      "tags": []
+    },
+
+    {
+      "cat": "Sıcak Çaylar",
+      "name": "Türk Çayı",
+      "desc": "",
+      "price": 20,
+      "tags": ["pop"]
+    },
+    {
+      "cat": "Sıcak Çaylar",
+      "name": "Bitki Çayı",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Türk Kahvesi",
+      "desc": "",
+      "price": 80,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Damla Sakızlı Türk Kahvesi",
+      "desc": "",
+      "price": 90,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Dibek Kahvesi",
+      "desc": "",
+      "price": 90,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Menengiç Kahvesi",
+      "desc": "",
+      "price": 90,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Nescafe",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Nescafe Sütlü",
+      "desc": "",
+      "price": 70,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Sahlep",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Sıcak Çikolata",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Espresso Single",
+      "desc": "",
+      "price": 70,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Espresso Double",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Americano",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Cafe Latte",
+      "desc": "",
+      "price": 110,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Cafe Mocha",
+      "desc": "",
+      "price": 110,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Espresso Macchiato",
+      "desc": "",
+      "price": 80,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Latte Macchiato",
+      "desc": "",
+      "price": 110,
+      "tags": []
+    },
+    {
+      "cat": "Sıcak Kahveler",
+      "name": "Cappuccino",
+      "desc": "",
+      "price": 110,
+      "tags": []
+    },
+
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Su",
+      "desc": "",
+      "price": 15,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Kola (Cam Şişe)",
+      "desc": "",
+      "price": 50,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Kola (Kutu)",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Fanta (Cam Şişe)",
+      "desc": "",
+      "price": 50,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Ice Tea",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Sprite",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Ankara Gazoz",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Meyve Suyu",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Taze Sıkılmış Meyve Suyu",
+      "desc": "",
+      "price": 70,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Soda",
+      "desc": "",
+      "price": 40,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Meyveli Soda",
+      "desc": "",
+      "price": 50,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Ayran",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Şalgam",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Limonata",
+      "desc": "",
+      "price": 60,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk İçecekler",
+      "name": "Muzlu Süt",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+
+    {
+      "cat": "Soğuk Kahveler",
+      "name": "Frappe",
+      "desc": "",
+      "price": 125,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk Kahveler",
+      "name": "Ice Latte",
+      "desc": "",
+      "price": 115,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk Kahveler",
+      "name": "Ice Cafe Mocha",
+      "desc": "",
+      "price": 125,
+      "tags": []
+    },
+    {
+      "cat": "Soğuk Kahveler",
+      "name": "White Chocolate Mocha",
+      "desc": "",
+      "price": 125,
+      "tags": []
+    },
+
+    {
+      "cat": "Kokteyl",
+      "name": "Frozen",
+      "desc": "Robin Mix: Limon soda + Ananas Suyu + Vişne Suyu (slush).",
+      "price": 115,
+      "tags": []
+    },
+    {
+      "cat": "Kokteyl",
+      "name": "Gökkuşağı",
+      "desc": "Portakal suyu + Çilek Aroması + Turna Aroması + (Buzlu Bardak).",
+      "price": 115,
+      "tags": ["pop"]
+    },
+
+    {
+      "cat": "Milkshake",
+      "name": "Çilek Milkshake",
+      "desc": "",
+      "price": 125,
+      "tags": []
+    },
+    {
+      "cat": "Milkshake",
+      "name": "Muz Milkshake",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+    {
+      "cat": "Milkshake",
+      "name": "Çikolata Milkshake",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+    {
+      "cat": "Milkshake",
+      "name": "Vanilya Milkshake",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+    {
+      "cat": "Milkshake",
+      "name": "Karamel Milkshake",
+      "desc": "",
+      "price": null,
+      "tags": []
+    },
+
+    {
+      "cat": "Aperatif",
+      "name": "Patates Cips",
+      "desc": "",
+      "price": 100,
+      "tags": ["pop"]
+    },
+    {
+      "cat": "Aperatif",
+      "name": "Kaşarlı Tost",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+    {
+      "cat": "Aperatif",
+      "name": "Karışık Tost",
+      "desc": "",
+      "price": 140,
+      "tags": ["pop"]
+    },
+    {
+      "cat": "Aperatif",
+      "name": "Çıtır Tavuk",
+      "desc": "",
+      "price": 150,
+      "tags": []
+    },
+    {
+      "cat": "Aperatif",
+      "name": "Soğan Halkası",
+      "desc": "",
+      "price": 150,
+      "tags": []
+    },
+    {
+      "cat": "Aperatif",
+      "name": "Nugget",
+      "desc": "",
+      "price": 150,
+      "tags": []
+    },
+
+    {
+      "cat": "Pastalar",
+      "name": "Cheese Cake Limon",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Cheese Frambuaz",
+      "desc": "",
+      "price": 100,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "San Sebastian",
+      "desc": "",
+      "price": 120,
+      "tags": ["pop"]
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Siyah Profiterollü Pasta",
+      "desc": "",
+      "price": 120,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Tiramisu",
+      "desc": "",
+      "price": 120,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Devils Pasta",
+      "desc": "",
+      "price": 120,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Kalpli Pasta (Frambuazlı)",
+      "desc": "",
+      "price": 120,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Fıstık Durağı",
+      "desc": "",
+      "price": 120,
+      "tags": []
+    },
+    {
+      "cat": "Pastalar",
+      "name": "Orman Meyveli Pasta",
+      "desc": "",
+      "price": 120,
+      "tags": []
+    },
+
+    {
+      "cat": "Burgerler",
+      "name": "Robin Burger",
+      "desc": "Dana köfte, cheddar, özel sos.",
+      "price": 320,
+      "tags": ["pop"],
+      "image": "assets/images/burger.jpg"
+    },
+    {
+      "cat": "Burgerler",
+      "name": "Cheeseburger",
+      "desc": "Dana köfte, cheddar peyniri.",
+      "price": 300,
+      "tags": []
+    },
+    {
+      "cat": "Burgerler",
+      "name": "Chicken Burger",
+      "desc": "Çıtır tavuk, özel sos.",
+      "price": 280,
+      "tags": []
+    },
+
+    {
+      "cat": "Yan Lezzetler",
+      "name": "Patates Kızartması",
+      "desc": "Özel baharat karışımı.",
+      "price": 120,
+      "tags": ["pop"]
+    }
+  ]
+}
