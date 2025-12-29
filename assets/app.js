@@ -209,6 +209,29 @@ function loadMenuJson(){
     });
 }
 
+function toLanding(push){
+  showLanding();
+  // URL temizle (masa kalsın)
+  var p = new URLSearchParams(location.search);
+  p.delete("cat");
+  var newUrl = location.pathname + (p.toString() ? ("?" + p.toString()) : "");
+  if (push) history.pushState({view:"landing"}, "", newUrl);
+  else history.replaceState({view:"landing"}, "", newUrl);
+}
+
+function toMenu(cat, push){
+  showMenuView();
+  // URL'e cat yaz (masa kalsın)
+  var p = new URLSearchParams(location.search);
+  if(cat && cat !== "__ALL__") p.set("cat", cat);
+  else p.delete("cat");
+
+  var newUrl = location.pathname + (p.toString() ? ("?" + p.toString()) : "");
+  if (push) history.pushState({view:"menu", cat:cat||"__ALL__"}, "", newUrl);
+  else history.replaceState({view:"menu", cat:cat||"__ALL__"}, "", newUrl);
+}
+
+
 function init(){
   loadMenuJson().then(function(data){
     var settings = data.settings || {};
@@ -240,45 +263,78 @@ function init(){
 
     var categories = uniq(menu.map(function(x){ return x.cat; }));
 
-    // ✅ İlk ekran: landing
     renderLanding(categories);
-    showLanding();
+renderCategoriesScroller(categories);
 
-    // ✅ Üstteki kayar kategori barı (menü ekranında kullanılacak)
-    renderCategoriesScroller(categories);
+var state = { activeCat:"__ALL__", query:"" };
 
-    var state = { activeCat:"__ALL__", query:"" };
+// İlk açılış: URL'de cat varsa direkt menüye, yoksa landing
+var p0 = new URLSearchParams(location.search);
+var urlCat = p0.get("cat");
+if (urlCat && categories.indexOf(urlCat) !== -1) {
+  state.activeCat = urlCat;
+  state.query = "";
+  document.getElementById("q").value = "";
+  setActiveCatButton(state.activeCat);
+  renderMenu(menu, settings, state);
+  toMenu(state.activeCat, false); // replaceState
+} else {
+  toLanding(false); // replaceState
+}
 
-    // Landing kategori tıklanınca menüye geç
-    document.getElementById("catGrid").addEventListener("click", function(e){
-      var tile = e.target.closest(".cat-tile");
-      if(!tile) return;
+document.getElementById("catGrid").addEventListener("click", function(e){
+  var tile = e.target.closest(".cat-tile");
+  if(!tile) return;
 
-      state.activeCat = tile.dataset.cat;
-      state.query = "";
-      document.getElementById("q").value = "";
+  state.activeCat = tile.dataset.cat;
+  state.query = "";
+  document.getElementById("q").value = "";
 
-      showMenuView();
-      setActiveCatButton(state.activeCat);
-      renderMenu(menu, settings, state);
-    });
+  setActiveCatButton(state.activeCat);
+  renderMenu(menu, settings, state);
+  toMenu(state.activeCat, true); // pushState
+});
 
-    // Kategori barı tıklama (mevcut davranış)
-    document.getElementById("cats").addEventListener("click", function(e){
-      var btn = e.target.closest(".cat-btn");
-      if(!btn) return;
 
-      state.activeCat = btn.dataset.cat;
-      setActiveCatButton(state.activeCat);
-      renderMenu(menu, settings, state);
-      window.scrollTo({top: 0, behavior: "smooth"});
-    });
+document.getElementById("cats").addEventListener("click", function(e){
+  var btn = e.target.closest(".cat-btn");
+  if(!btn) return;
+
+  state.activeCat = btn.dataset.cat;
+  setActiveCatButton(state.activeCat);
+  renderMenu(menu, settings, state);
+  toMenu(state.activeCat, true); // pushState
+  window.scrollTo({top: 0, behavior: "smooth"});
+});
+
 
     // Arama
     document.getElementById("q").addEventListener("input", function(e){
       state.query = e.target.value;
       renderMenu(menu, settings, state);
     });
+
+    window.addEventListener("popstate", function(ev){
+  var st = ev.state;
+
+  // Bazı tarayıcılar state'i null getirebilir; URL'den tekrar oku
+  var p = new URLSearchParams(location.search);
+  var cat = p.get("cat");
+
+  if (!cat) {
+    toLanding(false);
+    return;
+  }
+
+  // cat varsa menü görünümü
+  state.activeCat = cat;
+  state.query = "";
+  document.getElementById("q").value = "";
+  setActiveCatButton(state.activeCat);
+  renderMenu(menu, settings, state);
+  showMenuView();
+});
+
 
   }).catch(function(err){
     document.body.innerHTML =
